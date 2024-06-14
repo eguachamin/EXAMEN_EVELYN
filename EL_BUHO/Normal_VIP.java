@@ -1,15 +1,17 @@
 package EL_BUHO;
 
-class Normal_VIP extends Servicio {
+class Normal_VIP extends Ticket {
 
     private String tipo_asiento;
     public int opcion;
 
     public Normal_VIP(int id_pasaj, String nombre_pasaj, int telf_pasaj,
-                      String email_pasaj, String tipo_servicio, String tipo_asiento)
+                      String email_pasaj,String tipo_servicio, String ruta_pasa,
+                      String ida_vuelta,double costo, int opcion, String tipo_asiento)
     {
-        super(id_pasaj, nombre_pasaj, telf_pasaj, email_pasaj, tipo_servicio);
+        super(id_pasaj, nombre_pasaj, telf_pasaj, email_pasaj, tipo_servicio,ruta_pasa,ida_vuelta,costo);
         this.tipo_asiento=tipo_asiento;
+        this.opcion=opcion;
 
     }
 
